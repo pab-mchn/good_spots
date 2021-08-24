@@ -10,31 +10,38 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_08_24_102817) do
+ActiveRecord::Schema.define(version: 2021_08_24_142314) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "categories", force: :cascade do |t|
-    t.string "name"
+  create_table "place_tags", force: :cascade do |t|
+    t.bigint "place_id", null: false
+    t.bigint "tag_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["place_id"], name: "index_place_tags_on_place_id"
+    t.index ["tag_id"], name: "index_place_tags_on_tag_id"
   end
 
   create_table "places", force: :cascade do |t|
     t.string "name"
     t.string "address"
-    t.float "latitude"
-    t.float "longitude"
+    t.float "lat"
+    t.float "lng"
     t.text "description"
     t.string "telephone_number"
     t.string "website_url"
     t.string "email"
-    t.bigint "category_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.boolean "recommended"
-    t.index ["category_id"], name: "index_places_on_category_id"
+  end
+
+  create_table "tags", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "users", force: :cascade do |t|
@@ -60,7 +67,8 @@ ActiveRecord::Schema.define(version: 2021_08_24_102817) do
     t.index ["user_id"], name: "index_viewings_on_user_id"
   end
 
-  add_foreign_key "places", "categories"
+  add_foreign_key "place_tags", "places"
+  add_foreign_key "place_tags", "tags"
   add_foreign_key "viewings", "places"
   add_foreign_key "viewings", "users"
 end
