@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;500;600;800&display=swap');
+
 .container-top-bar-default {
   display: flex;
   justify-content: space-between
@@ -10,4 +12,9 @@
 
 .menu-container {
 
+}
+
+.menu-mobile-hamburger img {
+  width: 32px;
+  height: 32px;
 }
