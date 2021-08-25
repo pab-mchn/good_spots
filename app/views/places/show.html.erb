@@ -1,33 +1,32 @@
 <div class="container">
+    <div class="categories-show-head">
+      <p class="head-text-light"><strong class="head-text-strong"><%= @place.name %></strong><p class="head-text-light"><%= @place.tags.first.name %></p>
+    </div>
 
-  <div class="categories-show-head">
-    <p class="head-text-light"><strong class="head-text-strong"><%= @place.name %></strong><p class="head-text-light"><%= @place.tags.first.name %></p>
-  </div>
 
-
-  <div class="card-content">
-    <img src="https://images.unsplash.com/photo-1523942839745-7848c839b661?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80" />
-    <div class="card-content-infos">
+    <div class="card-content">
+      <img src="https://images.unsplash.com/photo-1523942839745-7848c839b661?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80" />
+    </div>
+    <div class="card-content-infos categories-show-head">
       <div>
-        <p><%= @place.description.truncate(200) %></p>
+        <p class="app-font"><%= @place.description.truncate(200) %></p>
       </div>
     </div>
-  </div>
 
 
-  <div class="categories-show-bottom">
-  <p class="head-text-light"><strong class="head-text-strong">Search-Term</strong> in your current area</p>
-</div>
+    <div class="categories-show-bottom">
+      <p class="head-text-light"><strong class="head-text-strong">Search-Term</strong> in your current area</p>
+    </div>
 
-  <div class="container-categories-show-cards mt-4">
-    <% @bottom_places.each do |place| %>
-      <div class="cat-single-show-card">
-        <div class="cat-card-show-text">
-          <%= place.name %>
+    <div class="container-categories-show-cards mt-4">
+      <% @bottom_places.each do |place| %>
+        <div class="cat-single-show-card">
+          <div class="cat-card-show-text">
+            <%= place.name %>
+          </div>
         </div>
-      </div>
-    <% end %>
-  </div>
+      <% end %>
+    </div>
 
 
 </div>
