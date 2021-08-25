@@ -1,26 +1,27 @@
 <div class="container">
-  <h1>A very long company name.</h1>
-  <h3 class=category-title>Category-Tag.</h3>
+
+  <div class="categories-show-head">
+    <p class="head-text-light"><strong class="head-text-strong"><%= @place.name %></strong><p class="head-text-light"><%= @place.tags.first.name %></p>
+  </div>
+
 
   <div class="card-content">
     <img src="https://images.unsplash.com/photo-1523942839745-7848c839b661?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80" />
     <div class="card-content-infos">
       <div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas cum sint officia iste ullam fugiat, modi atque animi enim vero facere ipsum? Totam est hic eum aspernatur blanditiis. Molestias, ea.</p>
+        <p><%= @place.description.truncate(200) %></p>
       </div>
     </div>
   </div>
+  <div class="container-categories-show-cards mt-4">
+    <% @bottom_places.each do |place| %>
+      <div class="cat-single-show-card">
+        <div class="cat-card-show-text">
+          <%= place.name %>
+        </div>
+      </div>
+    <% end %>
+  </div>
 
-  <div class="bottom-card-container">
-    <div class="bottom-card-title">
-    <h3>Search-Term in your current area</h3>
-    </div>
-    <div class="bottom-card-content">
-    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1515442261605-65987783cb6a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1500&q=80)">
-      <div class="card-category-text">
-      <h6>category tag</h6>
-      <h3>Card-head-h3- title</h3>
-    </div>
-</div>
-    </div>
+
 </div>
