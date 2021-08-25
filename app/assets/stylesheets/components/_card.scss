@@ -7,30 +7,43 @@
   margin: 0;
 }
 
-
 .small-cards-container {
-position: absolute;
-width: 156px;
-height: 201px;
-left: 204px;
-top: 430px;
-border-radius: 50%;
-
-  h2 {
-    font-size: 30px;
-    color: slateblue;
-  }
+  flex-shrink: 0;
+  height: 200px;
 }
 
-.small-card {
-  position: absolute;
-  width: 156px;
-  height: 201px;
-  left: 204px;
-  top: 430px;
-  border-radius: 50%;
-  
-    h1 {
-      font-size: 30px;
-    }
+.big-and-small-card-container {
+  overflow-x: auto;
+}
+.small-card{
+  border-radius: 10px;
+  /* add shadow ?? */
+  border: 1px solid #666;
+  width: 174px;
+  height: 87px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+}
+
+.big-card{
+  border-radius: 10px;
+  /* add shadow ?? */
+  border: 1px solid #666;
+  width: 174px;
+  height: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+
+.big-card-title{
+  font-family: 'Inter', sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: .08em;
 }
