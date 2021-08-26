@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get 'splash1', to: 'pages#splash1'
   get 'splash2', to: 'pages#splash2'
   get 'splash3', to: 'pages#splash3'
+  get 'splash4', to: 'pages#splash4'
   resources :places do
     collection do
       get :overview

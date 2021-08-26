@@ -1,15 +1,29 @@
-<%= render 'shared/top_bar_default' %>
-<div class="splash1-page-container">
-  <div class="splash-row">
-    <div class="splash-col">
-      <div class="splash-block">
-        <div class="splash1-overlay-01"></div>
-        <div class="splash-h1">
-          Lorem ipsum dolor sit amet
+<div class="slider-wrap">
+  <div class="slider" id="slider">
+    <div class="holder">
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="slide-image">
+            <%= image_tag "coffee01" %>
+          </div>
         </div>
-        <div class="splash-p">
-          Some P text
+        <span class="temp">74</span>
+      </div>
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="slide-image">
+            <%= image_tag "fair01" %>
+          </div>
         </div>
+        <span class="temp">64</span>
+      </div>
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="slide-image">
+            <%= image_tag "healthy01" %>
+          </div>
+        </div>
+        <span class="temp">82</span>
       </div>
     </div>
   </div>
