@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;500;600;800&display=swap');
+
+.categories-show-head {
+  margin: 0 45px 15px 45px;
+}
+
+.categories-show-bottom {
+  padding: 20px 25px 10px 45px;
+  margin-top: 30px;
+}
+
+.app-font {
+  font-family: 'Inter', sans-serif;
+  color: #a1a1a1;
+}
+
+.head-text-strong {
+  font-family: 'Inter', sans-serif;
+  color: #000;
+  font-weight: 600;
+  font-size: 21px;
+  margin: 0;
+}
+
+.head-text-light {
+  font-family: 'Inter', sans-serif;
+  color: #a1a1a1;
+  font-weight: 600;
+  font-size: 21px;
+  margin: 0;
+}
+
+.card-content {
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  width: 80%;
+  border-radius: 20px;
+  margin: 29px auto 0 auto;
+}
+
+.card-content > img {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-content p {
+  font-size: 15px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  color: #a1a1a1;
+  margin: 0;
+}
+
+.card-content .card-content-infos {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+}
+
+.container-categories-show-cards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(9, 130px [col-start]);
+  grid-column-gap: 60px;
+  overflow-x: auto;
+  /* add slider */
+  /* define grid */
+}
+
+.cat-single-show-card {
+  border-radius: 10px;
+  /* add shadow ?? */
+  border: 1px solid #666;
+  width: 176px;
+  height: 89px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 15px 0;
+  background-color: #C4C4C4;
+}
+
+/* .cat-single-card :first-child {
+  margin-left: 30px;
+} */
+
+.cat-card-show-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: .07em;
+  text-align: center;
+}
