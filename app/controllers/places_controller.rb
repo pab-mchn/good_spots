@@ -10,5 +10,8 @@ class PlacesController < ApplicationController
     else
       @bottom_places = Place.all.sample(6)
     end
+  
+  def index
+
   end
 end
