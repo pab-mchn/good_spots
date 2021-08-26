@@ -16,6 +16,6 @@ class PlacesController < ApplicationController
   end
 
   def swipe
-
   end
+
 end
