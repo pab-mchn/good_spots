@@ -17,20 +17,18 @@
 </div>
 
 <div class="big-and-small-card-container d-flex">
-  <% @recomended_places.each do |place| %>
+  <% @more_places.each_slice(3) do |set_of_3_places| %>
     <div class="small-cards-container mr-12">
-      <div class="small-card">
-        <div class= "small-card-text"><p><%= place.name %></p></div>
+      <div class="small-card" style="background-image: linear-gradient(rgba(0,0,0,0.19), rgba(0,0,0,0.74)), url('<%= "https://picsum.photos/500" %>')">
+        <div class= small-card-text><p class="text-center"><%= set_of_3_places.first.name.capitalize %></p></div>
       </div>
-
-      <div class="small-card mt-12">
-        <div class= "small-card-text"><%= place.name %></div>
-      </div>
-    </div>
-
-    <div class="big-card mr-12">
-      <div class="big-card-title"><%= place.name %>
+      <div class="small-card mt-12" style="background-image: linear-gradient(rgba(0,0,0,0.19), rgba(0,0,0,0.74)), url('<%= "https://picsum.photos/500" %>')">
+        <div class= small-card-text><p class="text-center"><%= set_of_3_places.second.name.capitalize %></p></div>
       </div>
     </div>
-    <% end %>
+    <div class="big-card mr-12" style="background-image: linear-gradient(rgba(0,0,0,0.19), rgba(0,0,0,0.74)), url('<%= "https://picsum.photos/500" %>')">
+      <div class="big-card-title"><p class="text-center"><%= set_of_3_places.third.name.capitalize %></p>
+      </div>
+    </div>
+  <% end %>
 </div>

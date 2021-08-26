@@ -5,8 +5,8 @@ class PlacesController < ApplicationController
     if params[:query].present?
       # Todo -> Get all places with that query
     else
-      @new_places = Place.all.sample(6)
-      @recomended_places = Place.all.sample(6)
+      @new_places = Place.last(8)
+      @more_places = Place.all.sample(18)
     end
   end
 
