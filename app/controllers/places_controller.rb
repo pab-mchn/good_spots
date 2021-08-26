@@ -10,8 +10,12 @@ class PlacesController < ApplicationController
     else
       @bottom_places = Place.all.sample(6)
     end
-  
+  end
+
   def index
+  end
+
+  def swipe
 
   end
 end
