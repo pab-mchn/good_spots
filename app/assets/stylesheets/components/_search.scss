@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;500;600;800&display=swap');
+
+.container-search {
+
+}
+
+.search-box {
+  border-radius: 10px;
+  border: 2px solid hsl(0, 0%, 92%);
+  background-color: hsl(0, 0%, 97%);
+  padding: 7px;
+  margin: 20px;
+}
+
+.search-inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-here {
+  font-family: 'Inter', sans-serif;
+  color: hsl(0, 0%, 50%);
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 1em;
+}
+
+.search-button {
+  background-color: #69D2AA;
+  color: #00286E;
+  border-radius: 10px;
+}
+
+.search-btn-txt {
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  letter-spacing: .8;
+  padding: 7px;
+}
