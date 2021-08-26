@@ -36,6 +36,8 @@ berlin_places.each do |place|
   puts "Place: '#{new_place.name}' has been created"
   puts "Assigning tags"
   place_tags.each do |tag|
+    tag = tag.gsub("-", " ")
+    tag = tag.capitalize
     tag = Tag.find_or_create_by(name: tag)
     PlaceTag.create!(place: new_place, tag: tag)
     puts "Tag: '#{tag.name}' has been created and assigned to '#{new_place.name}'"

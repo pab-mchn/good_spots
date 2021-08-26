@@ -1,0 +1,56 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;500;600;800&display=swap');
+
+.categories-head {
+  padding: 20px 0 20px 20px;
+}
+
+.head-text-strong {
+  font-family: 'Inter', sans-serif;
+  color: #000;
+  font-weight: 600;
+  font-size: 21px;
+  margin: 0;
+}
+
+.head-text-light {
+  font-family: 'Inter', sans-serif;
+  color: #a1a1a1;
+  font-weight: 600;
+  font-size: 21px;
+  margin: 0;
+}
+
+.container-categories-cards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(9, 87px [col-start]);
+  grid-column-gap: 12px;
+  overflow-x: auto;
+  /* add slider */
+  /* define grid */
+}
+
+.cat-single-card {
+  border-radius: 10px;
+  /* add shadow ?? */
+  border: 1px solid #666;
+  width: 87px;
+  height: 87px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 15px 0;
+}
+
+/* .cat-single-card :first-child {
+  margin-left: 30px;
+} */
+
+.cat-card-text {
+  font-family: 'Inter', sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: .08em;
+}
