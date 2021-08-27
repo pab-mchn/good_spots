@@ -18,37 +18,69 @@
 }
 .small-card{
   border-radius: 10px;
-  border: 1px solid #666;
+  border: 0px solid #666;
   width: 174px;
   height: 150px;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-end;
+ /* justify-content: center; */
   font-family: 'Inter', sans-serif;
   background-size: cover;
   background-position: center;
   color: white;
 }
 
+.small-card-title {
+  font-family: 'Inter', sans-serif;
+  text-transform: none;
+  max-width: 130px !important;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: .01em;
+  padding: 0 10px 20px 10px;
+  text-align: left;
+  line-height: 1.2em;
+  white-space: pre; /* CSS 2.0 */
+  white-space: pre-wrap; /* CSS 2.1 */
+  white-space: pre-line; /* CSS 3.0 */
+  white-space: -pre-wrap; /* Opera 4-6 */
+  white-space: -o-pre-wrap; /* Opera 7 */
+  white-space: -moz-pre-wrap; /* Mozilla */
+  word-wrap: break-word; /* IE 5+ */
+}
+
 .big-card{
   border-radius: 10px;
-  border: 1px solid #666;
+  border: 0px solid #666;
   width: 210px;
   height: 315px;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-end;
+  /* justify-content: flex-end; */
   flex-shrink: 0;
   background-size: cover;
   background-position: center;
   color: white;
 }
 
-
-.big-card-title{
+.big-card-title {
   font-family: 'Inter', sans-serif;
-  text-transform: uppercase;
-  font-size: 13px;
+  text-transform: none;
+  font-size: 23px;
   font-weight: 600;
-  letter-spacing: .08em;
+  letter-spacing: .03em;
+  padding: 0 10px 20px 10px;
+  text-align: left;
+  line-height: 1em;
+  max-width: 130px !important;
 }
+
+/* .cat-card-show-text {
+  font-family: 'Inter', sans-serif;
+  text-transform: none;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: .03em;
+  text-align: left;
+  line-height: 1.2em;
+} */
