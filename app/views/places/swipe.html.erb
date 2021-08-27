@@ -1,16 +1,25 @@
-<div class="categories-head mt-40">
+<div class="categories-head" style="padding: 0px 0 20px 20px;">
   <p class="head-text-light"><strong class="head-text-strong">Search-Term</strong> in your current area</p>
 </div>
 
-<div class="card-trip">
-  <img src="https://images.unsplash.com/photo-1514066558159-fc8c737ef259?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1534&q=80" />
-  <div class="card-trip-infos">
-    <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" />
-    <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user-2 avatar-bordered" />
-    <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user-3 avatar-bordered" />
+<div class="card-swipe" style="background-image: url('https://res.cloudinary.com/wagon/image/upload/c_fill,g_face,h_200,w_200/v1627363623/dxcvc5uqkimpnpkhgswe.jpg')">
+  <div class="card-swipe-infos">
+    <%= image_tag "Button - Cross.svg", class: "avatar-bordered swipe-actions" %>
+    <%= image_tag "Button - Go.svg", class: "avatar-bordered swipe-actions", style: "margin: 0 39px;" %>
+    <%= image_tag "Button - Heart.svg", class: "avatar-bordered swipe-actions" %>
   </div>
 </div>
 
 <div class="categories-head mt-40">
   <p class="head-text-light"><strong class="head-text-strong">More.</strong> Get inspired be all the great places here</p>
 </div>
+
+<div class="container-categories-show-cards mt-4">
+      <% @swipe_places.each do |place| %>
+        <div class="small-card" style="background-image: linear-gradient(rgba(0,0,0,0.19), rgba(0,0,0,0.74)), url('<%= place.image_url || "https://picsum.photos/500" %>')">
+          <div class="cat-card-show-text">
+            <%= place.name %>
+          </div>
+        </div>
+      <% end %>
+    </div>

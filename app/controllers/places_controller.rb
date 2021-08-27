@@ -23,6 +23,11 @@ class PlacesController < ApplicationController
   end
 
   def swipe
+    if params[:query].present?
+      # Todo -> Get all places with that query
+    else
+      @swipe_places = Place.all.sample(6)
+    end
   end
 
 end
