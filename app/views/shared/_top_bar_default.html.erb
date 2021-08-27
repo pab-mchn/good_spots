@@ -1,10 +1,11 @@
 <div class="container-top-bar-default">
+  <div class="menu-container">
+    <%= link_to overview_places_path do %>
+      <i class="fas fa-chevron-left"></i>
+    <% end %>
+  </div>
   <div class="logo">
     <%= image_tag 'gs-logo-v06' %>
   </div>
-  <div class="menu-container">
-    <div class="menu-mobile-hamburger">
-      <%= image_tag 'hamburger-button' %>
-    </div>
-  </div>
+    <i class="fas fa-ellipsis-v"></i>
 </div>
