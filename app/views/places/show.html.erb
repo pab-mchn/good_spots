@@ -22,11 +22,13 @@
 
     <div class="container-categories-show-cards mt-4">
       <% @bottom_places.each do |place| %>
-        <div class="small-card" style="background-image: linear-gradient(rgba(0,0,0,0.19), rgba(0,0,0,0.74)), url('<%= place.image_url || "https://picsum.photos/500" %>')">
-          <div class="cat-card-show-text">
-            <%= place.name %>
+        <%= link_to place_path(place) do  %>
+          <div class="small-card" style="background-image: linear-gradient(rgba(0,0,0,0.19), rgba(0,0,0,0.74)), url('<%= place.image_url || "https://picsum.photos/500" %>')">
+            <div class="cat-card-show-text">
+              <%= place.name %>
+            </div>
           </div>
-        </div>
+        <% end %>
       <% end %>
     </div>
 
