@@ -80,8 +80,8 @@
   width: 176px;
   height: 130px;
   display: flex;
-/*   align-items: center;
-  justify-content: center; */
+  align-items: flex-end;
+  /* justify-content: center; */
   margin: 0 0 15px 0;
   background-color: #C4C4C4;
 }
@@ -92,8 +92,9 @@
   text-transform: none;
   font-size: 17px;
   font-weight: 400;
-  letter-spacing: .03em;
+  letter-spacing: .01em;
   line-height: 1.2em;
   text-align: left;
-  padding: 20px 10px 0 10px;
+  padding: 0 10px 20px 10px;
+  max-width: 130px !important;
 }
