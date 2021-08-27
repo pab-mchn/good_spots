@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;500;600;800&display=swap');
 
-/* RESET */
-
-/* input:hover,
-input:active {
-  border: none !important;
-} */
 
 input, textarea, select, button, ::file-selector-button {
   text-align: left;
@@ -39,9 +33,6 @@ input:target {
   border: none;
   outline: 2px solid #69D2AA;
 }
-
-
-/* GoodSpots*/
 
 .container-search {
   margin: 35px 20px;
