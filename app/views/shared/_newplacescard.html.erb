@@ -3,14 +3,15 @@
   </div>
 
   <div class="container-categories-show-cards mt-4">
+
     <% @new_places.each do |place| %>
       <%= link_to place_path(place) do %>
-        <div class="cat-single-show-card small-card">
+        <div class="cat-single-show-card small-card" style="background-image: linear-gradient(rgba(0,0,0,0.19), rgba(0,0,0,0.74)), url('<%= place.image_url || "https://picsum.photos/500" %>')">
           <div class="cat-card-show-text">
             <%= place.name %>
           </div>
         </div>
-      <% end %> 
+      <% end %>
     <% end %>
   </div>
 
@@ -21,25 +22,24 @@
 <div class="big-and-small-card-container d-flex">
   <% @more_places.each_slice(3) do |set_of_3_places| %>
     <div class="small-cards-container mr-12">
-
-      <%= link_to place_path(set_of_3_places.first) do  %> 
-        <div class="small-card" style="background-image: linear-gradient(rgba(0,0,0,0.19), rgba(0,0,0,0.74)), url('<%= "https://picsum.photos/500" %>')">
+      <%= link_to place_path(set_of_3_places.first) do  %>
+        <div class="small-card" style="background-image: linear-gradient(rgba(0,0,0,0.19), rgba(0,0,0,0.74)), url('<%= set_of_3_places.first.image_url || "https://picsum.photos/500" %>')">
           <div class= small-card-text><p class="text-center"><%= set_of_3_places.first.name.capitalize %></p></div>
         </div>
       <% end %>
 
-      <%= link_to place_path(set_of_3_places.second) do  %> 
-        <div class="small-card mt-12" style="background-image: linear-gradient(rgba(0,0,0,0.19), rgba(0,0,0,0.74)), url('<%= "https://picsum.photos/500" %>')">
+      <%= link_to place_path(set_of_3_places.second) do  %>
+        <div class="small-card mt-12" style="background-image: linear-gradient(rgba(0,0,0,0.19), rgba(0,0,0,0.74)), url('<%= set_of_3_places.second.image_url || "https://picsum.photos/500" %>')">
           <div class= small-card-text><p class="text-center"><%= set_of_3_places.second.name.capitalize %></p></div>
         </div>
       <% end %>
     </div>
 
-      <%= link_to place_path(set_of_3_places.third) do  %>
-      <div class="big-card mr-12" style="background-image: linear-gradient(rgba(0,0,0,0.19), rgba(0,0,0,0.74)), url('<%= "https://picsum.photos/500" %>')">
+    <%= link_to place_path(set_of_3_places.third) do  %>
+      <div class="big-card mr-12" style="background-image: linear-gradient(rgba(0,0,0,0.19), rgba(0,0,0,0.74)), url('<%= set_of_3_places.third.image_url || "https://picsum.photos/500" %>')">
         <div class="big-card-title"><p class="text-center"><%= set_of_3_places.third.name.capitalize %></p>
         </div>
       </div>
     <% end %>
   <% end %>
-  </div>
+</div>

@@ -11,10 +11,8 @@
           <%= image_tag @place.image_url %>
       <% end %>
     </div>
-    <div class="card-content-infos categories-show-head">
-      <div>
-        <p class="app-font"><%= @place.description.truncate(200) %></p>
-      </div>
+    <div class="card-content-infos categories-show-head mt-12">
+      <p class="app-font lh-23"><%= @place.description.truncate(200) %></p>
     </div>
 
 
@@ -24,7 +22,7 @@
 
     <div class="container-categories-show-cards mt-4">
       <% @bottom_places.each do |place| %>
-        <div class="cat-single-show-card">
+        <div class="small-card" style="background-image: linear-gradient(rgba(0,0,0,0.19), rgba(0,0,0,0.74)), url('<%= place.image_url || "https://picsum.photos/500" %>')">
           <div class="cat-card-show-text">
             <%= place.name %>
           </div>
