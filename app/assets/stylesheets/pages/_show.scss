@@ -71,18 +71,17 @@
   grid-template-columns: repeat(9, 130px [col-start]);
   grid-column-gap: 60px;
   overflow-x: auto;
-
+  scrollbar-width: none;
 }
 
 .cat-single-show-card {
   border-radius: 10px;
-  
-  border: 1px solid #666;
+  border: 0px solid #666;
   width: 176px;
-  height: 89px;
+  height: 130px;
   display: flex;
-  align-items: center;
-  justify-content: center;
+/*   align-items: center;
+  justify-content: center; */
   margin: 0 0 15px 0;
   background-color: #C4C4C4;
 }
@@ -90,8 +89,11 @@
 
 .cat-card-show-text {
   font-family: 'Inter', sans-serif;
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: .07em;
-  text-align: center;
+  text-transform: none;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: .03em;
+  line-height: 1.2em;
+  text-align: left;
+  padding: 20px 10px 0 10px;
 }
