@@ -3,4 +3,16 @@ class PagesController < ApplicationController
 
   def home
   end
+
+  def splash1
+  end
+
+  def splash2
+  end
+
+  def splash3
+  end
+
+  def splash4
+  end
 end
