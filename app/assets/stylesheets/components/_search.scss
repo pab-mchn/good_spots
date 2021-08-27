@@ -1,15 +1,65 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;500;600;800&display=swap');
 
-.container-search {
+/* RESET */
 
+/* input:hover,
+input:active {
+  border: none !important;
+} */
+
+input, textarea, select, button, ::file-selector-button {
+  text-align: left;
+  text-indent: 0;
+  text-shadow: none;
+  text-transform: none;
+  word-spacing: 0;
+  letter-spacing: 0;
 }
 
-.search-box {
-  border-radius: 10px;
+input {
+  display: inline-block;
+  appearance: none;
+  -moz-default-appearance: none;
+  padding: 0;
+  border: 0px;
+  background-color: hsl(0, 0%, 50%);
+  color: hsl(0, 0%, 50%);
+  font: 'Inter', sans-serif;
+  text-rendering: optimizeLegibility;
+  cursor: text;
+  overflow-clip-box: padding-box content-box;
+}
+
+input:hover,
+input:active,
+input:focus,
+input:focus-visible,
+input:focus-within,
+input:target {
+  border: none;
+  outline: 2px solid #69D2AA;
+}
+
+
+/* GoodSpots*/
+
+.container-search {
+  margin: 35px 20px;
+}
+
+.container-search form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-control {
   border: 2px solid hsl(0, 0%, 92%);
   background-color: hsl(0, 0%, 97%);
-  padding: 7px;
-  margin: 20px;
+  padding: 12px 7px;
+  background-color: hsl(0, 0%, 97%);
+  border-radius: 8px;
+  width: 100%;
+  margin-right: 10px;
 }
 
 .search-inner {
@@ -28,15 +78,17 @@
 }
 
 .search-button {
-  background-color: #69D2AA;
+  font-family: 'Inter', sans-serif;
   color: #00286E;
-  border-radius: 10px;
+  background-color: #69D2AA;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 17px;
+  letter-spacing: .8;
+  padding: 12px;
 }
 
-.search-btn-txt {
-  font-family: 'Inter', sans-serif;
-  font-weight: 800;
-  font-size: 20px;
-  letter-spacing: .8;
-  padding: 7px;
+.search-button:hover {
+  color: #69D2AA !important;
+  background-color: #00286E !important;
 }

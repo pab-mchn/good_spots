@@ -1,10 +1,10 @@
 <div class="container-search">
-  <div class="search-box">
-    <div class="search-inner">
-      <div class="search-here">Search here...</div>
-      <div class="search-button">
-       <div class="search-btn-txt">Go</div>
-      </div>
-    </div>
-  </div>
+  <%= form_tag swipe_places_path, method: :get do %>
+    <%= text_field_tag :place_name,
+      params[:place_name],
+      class: "form-control",
+      placeholder: "Find good spots..."
+    %>
+    <%= submit_tag "Go", class: "search-button" %>
+  <% end %>
 </div>
