@@ -36,4 +36,5 @@ document.addEventListener('turbolinks:load', () => {
     // initSelect2();
     // splash()
     initTinderSwipe()
+        // comment
 });
