@@ -11,10 +11,12 @@
       <% end %>
     </div>
     <div class="card-content-infos categories-show-head mt-12">
+
       <div class="card-swipe-infos">
         <%= link_to viewing_places_path do %><i class="fas fa-heart"></i></i><% end %>
         <%= link_to overview_places_path do %><i class="fas fa-times"></i></i><% end %>
       </div>
+
     </div>
     <p class="app-font lh-23"><%= @place.description.truncate(200) %></p>
 
