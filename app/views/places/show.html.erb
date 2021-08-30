@@ -3,7 +3,6 @@
       <p class="head-text-light"><strong class="head-text-strong"><%= @place.name %></strong><p class="head-text-light"><%= @place.tags.first.name %></p>
     </div>
 
-
     <div class="card-content">
       <% if @place.image_url.nil? || @place.image_url.ends_with?("svg")%>
         <img src="https://images.unsplash.com/photo-1523942839745-7848c839b661?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80" />
@@ -12,15 +11,20 @@
       <% end %>
     </div>
     <div class="card-content-infos categories-show-head mt-12">
-     <div class= card-swipe-infos></div>
-      <i class="fas fa-thumbs-up"></i>
-      <i class="fas fa-thumbs-down"></i>
-      <p class="app-font lh-23"><%= @place.description.truncate(200) %></p>
+
+      <div class="card-swipe-infos">
+        <%= link_to viewing_places_path do %><i class="fas fa-heart"></i></i><% end %>
+        <%= link_to overview_places_path do %><i class="fas fa-times"></i></i><% end %>
+      </div>
+
     </div>
+    <p class="app-font lh-23"><%= @place.description.truncate(200) %></p>
+
+    <%= link_to "Book now", "#", class: "btn btn-flat" %>
 
 
     <div class="categories-show-bottom">
-      <p class="head-text-light"><strong class="head-text-strong">Search-Term</strong> in your current area</p>
+      <p class="head-text-light"><strong class="head-text-strong">More places.</strong> in your current area</p>
     </div>
 
     <div class="container-categories-show-cards mt-4">

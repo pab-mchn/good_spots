@@ -63,7 +63,9 @@
 
 .lh-23 {
   line-height: 23px;
+  margin: 78px 39px 0px 58px;
 }
+
 
 .container-categories-show-cards {
   width: 100%;
@@ -97,4 +99,31 @@
   text-align: left;
   padding: 0 10px 20px 10px;
   max-width: 130px !important;
+}
+
+.fa-heart{
+  position: absolute;
+  left: 250px;
+  font-size: 45px;
+  color: #61da93;
+}
+
+.fa-times{
+  position: absolute;
+  left: 125px;
+  font-size: 45px;
+  color: #f34a34;
+}
+
+.btn-flat {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  background: #1EDD88;
+  transition: background 0.3s ease;
+}
+
+.btn-flat:hover {
+  background: #1BCB7F;
+  color: white;
 }
