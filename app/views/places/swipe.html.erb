@@ -4,7 +4,7 @@
 
 <div class="swipe-container">
   <% @places.each do |place| %>
-    <div class="swipe-card-stack" style="background-image: url('<%= place.image_url %>')">
+    <div class="swipe-card-stack" data-place-id="<%= place.id %>" style="background-image: url('<%= place.image_url %>')">
     </div>
   <% end %>
 </div>

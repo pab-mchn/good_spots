@@ -5,11 +5,13 @@ Rails.application.routes.draw do
   get 'splash2', to: 'pages#splash2'
   get 'splash3', to: 'pages#splash3'
   get 'splash4', to: 'pages#splash4'
+  
+ 
   resources :places do
+    resources :viewings, only: [:create]
     collection do
       get :overview
       get :swipe
-      get :viewing
     end
   end
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
