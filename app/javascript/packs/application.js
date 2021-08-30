@@ -28,9 +28,11 @@ import "bootstrap";
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
 // import { splash } from "../pages/splash";
+import { initTinderSwipe } from '../components/init_tinder_swipe'
 
 document.addEventListener('turbolinks:load', () => {
-  // Call your functions here, e.g:
-  // initSelect2();
-  // splash()
+    // Call your functions here, e.g:
+    // initSelect2();
+    // splash()
+    initTinderSwipe()
 });

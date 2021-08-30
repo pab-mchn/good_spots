@@ -23,11 +23,11 @@ class PlacesController < ApplicationController
   end
 
   def swipe
-    if params[:query].present?
-      # Todo -> Get all places with that query
+    if params[:search_term].present?
+      @places = Place.search_by_name_and_description(params[:search_term])
+      @swipe_places = Place.all.sample(6)
     else
       @swipe_places = Place.all.sample(6)
     end
   end
-
 end
