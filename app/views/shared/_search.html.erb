@@ -1,7 +1,7 @@
 <div class="container-search">
   <%= form_tag swipe_places_path, method: :get do %>
-    <%= text_field_tag :place_name,
-      params[:place_name],
+    <%= text_field_tag :search_term,
+      params[:search_term],
       class: "form-control",
       placeholder: "Find good spots..."
     %>

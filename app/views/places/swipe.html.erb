@@ -2,11 +2,18 @@
   <p class="head-text-light"><strong class="head-text-strong">Search-Term</strong> in your current area</p>
 </div>
 
-<div class="card-swipe" style="background-image: url('https://res.cloudinary.com/wagon/image/upload/c_fill,g_face,h_200,w_200/v1627363623/dxcvc5uqkimpnpkhgswe.jpg')">
-  <div class="card-swipe-infos">
-    <%= image_tag "Button - Cross.svg", class: "avatar-bordered swipe-actions" %>
-    <%= image_tag "Button - Go.svg", class: "avatar-bordered swipe-actions", style: "margin: 0 39px;" %>
-    <%= image_tag "Button - Heart.svg", class: "avatar-bordered swipe-actions" %>
+<div class="swipe-container">
+  <% @places.each do |place| %>
+    <div class="swipe-card-stack" style="background-image: url('<%= place.image_url %>')">
+    </div>
+  <% end %>
+</div>
+
+<div class ="swipe-3-buttons-container">
+  <div class="swipe-3-buttons">
+    <%= image_tag "Button - Cross.svg", class: "swipe-button" %>
+    <%= image_tag "Button - Go.svg", class: "swipe-button" %>
+    <%= image_tag "Button - Heart.svg", class: "swipe-button" %>
   </div>
 </div>
 

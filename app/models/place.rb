@@ -1,4 +1,6 @@
 class Place < ApplicationRecord
+  include PgSearch::Model
+
   has_many :viewings
   has_many :place_tags
   has_many :tags, through: :place_tags
@@ -12,4 +14,10 @@ class Place < ApplicationRecord
   # validates :email, presence: true, uniqueness: true
   reverse_geocoded_by :lat, :lng
   after_validation :reverse_geocode
+
+  pg_search_scope :search_by_name_and_description,
+                  against: [ :name, :description ],
+                  using: {
+                    tsearch: { prefix: true }
+                  }
 end
