@@ -1,12 +1,7 @@
 class ViewingsController < ApplicationController
 
-
   def index
     @places = Place.all
-  end
-
-  def show
-
   end
 
   def create
@@ -17,7 +12,7 @@ class ViewingsController < ApplicationController
 
   def destroy
     @place.destroy
-    redirect_to 
+    redirect_to place_viewings_path
   end
 
 end
