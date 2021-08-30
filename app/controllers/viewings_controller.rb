@@ -2,9 +2,11 @@ class ViewingsController < ApplicationController
 
 
   def index
+    @places = Place.all
   end
 
   def show
+
   end
 
   def create
@@ -14,5 +16,8 @@ class ViewingsController < ApplicationController
   end
 
   def destroy
+    @place.destroy
+    redirect_to 
   end
+
 end
