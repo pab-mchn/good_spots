@@ -6,7 +6,7 @@
 
 .categories-show-bottom {
   padding: 20px 25px 10px 45px;
-  margin-top: 30px;
+  margin-top: 60px;
 }
 
 .app-font {
@@ -115,15 +115,18 @@
   color: #f34a34;
 }
 
-.btn-flat {
+.btn-map {
   color: white;
-  padding: 8px 24px;
+  padding: 12px 24px;
   border-radius: 4px;
-  background: #1EDD88;
+  background: #61da93;
   transition: background 0.3s ease;
+  position: relative;
+  top: 37px;
+  left: 150px;
 }
 
-.btn-flat:hover {
+.btn-map:hover {
   background: #1BCB7F;
   color: white;
 }
