@@ -1,7 +1,7 @@
 class ViewingsController < ApplicationController
 
   def index
-    @places = Place.all
+    @places = Place.all.first(6)
   end
 
   def create
