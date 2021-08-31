@@ -1,24 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;500;600;800&display=swap');
-
 .container-top-bar-default {
-  display: flex;
-  justify-content: space-between;
-  margin: 10px 0 35px 0;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin: 10px 0 35px 0;
 }
 
-.logo img {
-  width: 140px;
-  height: auto;
+.good-logo img {
+    width: 170px;
+    height: auto;
+}
+
+.header-profile-image {
+    width: 48px;
+    height: 48px;
+    margin: 7px 20px 15px 15px;
+    border: 1px solid hsl(0, 0%, 90%);
+    border-radius: 100%;
 }
 
 .fa-chevron-left {
-  font-size: 25px;
-  color: #69d2aa;
-  margin: 15px 15px 15px 18px;
+    font-size: 25px;
+    color: #69d2aa;
+    margin: 15px 15px 15px 18px;
 }
 
 .fa-ellipsis-v {
-  font-size: 24px;
-  color: #69d2aa;
-  margin: 15px 25px 15px 15px;
+    font-size: 24px;
+    color: #69d2aa;
+    margin: 15px 25px 15px 15px;
 }
