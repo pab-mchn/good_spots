@@ -1,3 +1,4 @@
+import Rails from '@rails/ujs'
 import Hammer from 'hammerjs'
 
 const initTinderSwipe = () => {
@@ -24,7 +25,14 @@ const initTinderSwipe = () => {
                 const xMulti = event.deltaX * 0.03;
                 const yMulti = event.deltaY / 80;
                 const rotate = xMulti * yMulti;
-                console.log(event.deltaX > 0 ? "Send ajax with like" : "Send ajax with dislike")
+                const liked = event.deltaX > 0 
+                const placeId = card.dataset.placeId
+                const url = ` /places/${placeId}/viewings`
+                Rails.ajax({
+                    url: url,
+                    type: "post",
+                    data: `viewing[liked]=${liked}`
+                })
                 event.target.style.transform = 'translate(' + toX + 'px, ' + (toY + event.deltaY) + 'px) rotate(' + rotate + 'deg)';
             }
         })
