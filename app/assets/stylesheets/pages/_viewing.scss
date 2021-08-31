@@ -33,10 +33,14 @@
   margin: 17px;
  /* justify-content: center; */
   font-family: 'Inter', sans-serif;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .good-profile-image {
   text-align: center;
 }
-
-
+.fa-trash-alt {
+ font-size: 27px;
+ margin: 20px 10px 20px 10px;
+}

@@ -14,5 +14,4 @@ class ViewingsController < ApplicationController
     @place.destroy
     redirect_to place_viewings_path
   end
-
 end
