@@ -11,13 +11,26 @@
     height: auto;
 }
 
-.header-profile-image {
+.dropdown {
+    margin: 12px 25px 15px 0;
+}
+
+.dropdown-item {
+    margin: 15px 0
+}
+
+.dropdown-item:hover {
+    color: #69d2aa;
+}
+
+
+/* .header-profile-image {
     width: 48px;
     height: 48px;
     margin: 7px 20px 15px 15px;
     border: 1px solid hsl(0, 0%, 90%);
     border-radius: 100%;
-}
+} */
 
 .fa-chevron-left {
     font-size: 25px;

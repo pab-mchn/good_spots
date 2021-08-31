@@ -50,12 +50,13 @@ input:target {
     font-size: 17px !important;
     font-weight: 500;
     line-height: 1em;
-    color: hsl(0, 0%, 50%);
+    color: hsl(0, 0%, 95%);
     border: 2px solid hsl(181, 48%, 75%);
     background-color: hsl(0, 0%, 97%);
-    padding: 15px 7px;
     border-radius: 8px;
-    width: 75%;
+    width: 80%;
+    height: 60px;
+    padding: 15px 7px;
     margin-right: 10px;
 }
 
