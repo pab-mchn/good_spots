@@ -6,36 +6,18 @@
       <%= image_tag 'profile-image-xue.png', class: "good-profile-image" %>
       <div class= "welcome-text"><strong class="head-text-strong" > Hi. <div class="head-text-light"> <p>  You have liked xxx places</p>
       </div>
-      </div>
     </div>
   </div>
 
-    <div class="dashboard-cards">
-
+  <div class="dashboard-cards">
+   <%@viewings.each do |viewing| %> 
       <div class="places-card">
+      <p><%= viewing.place.name %></p>
+        <%=link_to(viewing_path(viewing), method: :delete) do %>
        <i class="far fa-trash-alt"></i>
+      <% end %>
       </div>
-
-
-      <div class="places-card">
-        <i class="far fa-trash-alt"></i>
-      </div>
-
-      <div class="places-card">
-       <i class="far fa-trash-alt"></i>
-      </div>
-      
-      <div class="places-card">
-       <i class="far fa-trash-alt"></i>
-      </div>
-
-      <div class="places-card">
-       <i class="far fa-trash-alt"></i>
-      </div>
-
-      <div class="places-card">
-       <i class="far fa-trash-alt"></i>
-      </div>
-    </div>
+    <% end %>
+  </div>
 </div> 
   

@@ -1,7 +1,7 @@
 class ViewingsController < ApplicationController
 
   def index
-    @places = Place.all.first(6)
+    @viewings = Viewing.where(user:current_user).where(liked:true)
   end
 
   def create
@@ -11,7 +11,8 @@ class ViewingsController < ApplicationController
   end
 
   def destroy
-    @place.destroy
-    redirect_to place_viewings_path
+    @viewing = Viewing.find(params[:id])
+    @viewing.destroy
+    redirect_to viewings_path
   end
 end

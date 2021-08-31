@@ -6,9 +6,9 @@ Rails.application.routes.draw do
   get 'splash3', to: 'pages#splash3'
   get 'splash4', to: 'pages#splash4'
   
- 
+  resources :viewings, only: [:index, :destroy]
   resources :places do
-    resources :viewings, only: [:create, :index, :destroy]
+    resources :viewings, only: [:create]
     collection do
       get :overview
       get :swipe
