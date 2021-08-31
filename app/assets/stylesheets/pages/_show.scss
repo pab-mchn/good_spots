@@ -101,29 +101,35 @@
     max-width: 130px !important;
 }
 
-.fa-heart {
-    position: absolute;
-    left: 250px;
-    font-size: 45px;
-    color: #61da93;
+.card-swipe-infos{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: space-around;
 }
 
-.fa-times {
-    position: absolute;
-    left: 125px;
-    font-size: 45px;
-    color: #f34a34;
+.fas{
+  width: 59px;
+  margin: 0 10px;
 }
 
-.btn-flat {
-    color: white;
-    padding: 8px 24px;
-    border-radius: 4px;
-    background: #1EDD88;
-    transition: background 0.3s ease;
+.fa-heart{
+  margin-top: -3px;
+  font-size: 42px;
+  color: #61da93;
+  line-height: 1;
 }
 
-.btn-flat:hover {
-    background: #1BCB7F;
-    color: white;
+.fa-times{
+  margin-top: -4px;
+  font-size: 47px;
+  color: #f34a34;
+  line-height: 1;
+}
+
+.fa-map-marker-alt{
+  font-size: 37px;
+  color: #5691F6;
+  line-height: 1;
 }

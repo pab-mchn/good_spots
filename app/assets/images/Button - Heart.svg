@@ -1,7 +1,7 @@
-<svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="21" cy="21" r="21" fill="#97D8B2"/>
-<ellipse rx="7.96004" ry="8.76037" transform="matrix(0.85445 0.519534 -0.399871 0.916571 28.5497 18.5761)" fill="white"/>
-<path d="M21.2741 35.2528L20.9227 17.9243L33.4281 25.528L21.2741 35.2528Z" fill="white"/>
-<ellipse rx="7.96004" ry="8.76037" transform="matrix(-0.85445 0.519534 0.399871 0.916571 13.9957 18.4195)" fill="white"/>
-<path d="M21.271 35.0962L21.6225 17.7677L9.11708 25.3714L21.271 35.0962Z" fill="white"/>
+<svg width="65" height="67" viewBox="0 0 65 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+<ellipse cx="32.5" cy="33.1633" rx="32.5" ry="33.1633" fill="#61DA93"/>
+<ellipse rx="12.3875" ry="13.7905" transform="matrix(0.849735 0.527211 -0.39312 0.919487 44.1841 29.3354)" fill="white"/>
+<path d="M32.9243 55.6713L32.3804 28.3061L51.734 40.3139L32.9243 55.6713Z" fill="white"/>
+<ellipse rx="12.3875" ry="13.7905" transform="matrix(-0.849735 0.527211 0.39312 0.919487 21.6602 29.0882)" fill="white"/>
+<path d="M32.9194 55.424L33.4634 28.0588L14.1097 40.0666L32.9194 55.424Z" fill="white"/>
 </svg>
