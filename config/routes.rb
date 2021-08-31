@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   
  
   resources :places do
-    resources :viewings, only: [:create]
+    resources :viewings, only: [:create, :index, :destroy]
     collection do
       get :overview
       get :swipe
