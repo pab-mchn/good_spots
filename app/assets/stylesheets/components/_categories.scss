@@ -1,14 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;500;600;800&display=swap');
 .categories-head {
-    padding: 20px 0 20px 20px;
-}
-
-.head-text-strong {
-    font-family: 'Inter', sans-serif;
-    color: #000;
-    font-weight: 600;
-    font-size: 21px;
-    margin: 0;
+    padding: 20px;
+    width: 100vw;
 }
 
 .head-text-light {
@@ -17,6 +10,16 @@
     font-weight: 600;
     font-size: 21px;
     margin: 0;
+    line-height: 1.2;
+}
+
+.head-text-strong {
+    font-family: 'Inter', sans-serif;
+    color: #000;
+    font-weight: 600;
+    font-size: 21px;
+    margin: 0;
+    line-height: 1.2;
 }
 
 .container-categories-cards {
@@ -26,6 +29,10 @@
     grid-column-gap: 12px;
     overflow-x: auto;
     scrollbar-width: none;
+}
+
+.container-categories-show-cards:first-child {
+    margin-left: 10px;
 }
 
 .cat-single-card {

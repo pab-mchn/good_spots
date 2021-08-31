@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;500;600;800&display=swap');
+.container {
+    margin-bottom: 45px;
+}
+
 .categories-show-head {
-    margin: 17px 45px 15px 45px;
+    margin: 17px 45px 0px 45px;
 }
 
 .categories-show-bottom {
@@ -81,7 +85,6 @@
     height: 130px;
     display: flex;
     align-items: flex-end;
-    /* justify-content: center; */
     margin: 0 0 15px 0;
     background-color: #C4C4C4;
 }

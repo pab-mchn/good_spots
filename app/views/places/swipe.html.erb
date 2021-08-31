@@ -1,4 +1,4 @@
-<div class="categories-head mt-120"">
+<div class="categories-head">
   <p class="head-text-light"><strong class="head-text-strong">Search-Term</strong> in your current area</p>
 </div>
 
@@ -21,7 +21,7 @@
   <p class="head-text-light"><strong class="head-text-strong">More.</strong> Get inspired be all the great places here</p>
 </div>
 
-<div class="container-categories-show-cards mt-4">
+<div class="container-categories-show-cards index-bottom-row mt-4">
       <% @swipe_places.each do |place| %>
         <div class="small-card" style="background-image: linear-gradient(rgba(0,0,0,0.19), rgba(0,0,0,0.74)), url('<%= place.image_url || "https://picsum.photos/500" %>')">
           <div class="cat-card-show-text">
@@ -29,4 +29,4 @@
           </div>
         </div>
       <% end %>
-    </div>
+</div>

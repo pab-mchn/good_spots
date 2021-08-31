@@ -30,10 +30,12 @@ import "@fortawesome/fontawesome-free/css/all";
 // import { initSelect2 } from '../components/init_select2';
 // import { splash } from "../pages/splash";
 import { initTinderSwipe } from '../components/init_tinder_swipe'
+import { initDropDownMenu } from '../components/init_dropdown_menu'
 
 document.addEventListener('turbolinks:load', () => {
     // Call your functions here, e.g:
     // initSelect2();
     // splash()
     initTinderSwipe()
+    initDropDownMenu()
 });
