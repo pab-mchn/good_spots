@@ -4,11 +4,29 @@
   </div>
 
   <div class="container-categories-cards">
-    <% @tags.each do |tag| %>
+    <% @specified_tags.each do |tag| %>
       <div class="cat-single-card">
-        <%  %>
         <div class="cat-card-text">
-          <%= tag.name %>
+        <% case tag.name %>
+          <%when "Coffee"%>
+            <i class="fas fa-mug-hot category-icon"></i>
+            <%= tag.name %>
+          <%when "Grocerie"%>
+            <i class="fas fa-shopping-basket category-icon"></i>
+            <%= tag.name %>
+          <%when "Social"%>
+            <i class="fas fa-user-friends category-icon"></i>
+            <%= tag.name %>
+          <%when "Company"%>
+            <i class="fas fa-building category-icon"></i>
+            <%= tag.name %>
+          <%when "Eatery"%>
+            <i class="fas fa-utensils category-icon"></i>
+            <%= tag.name %>
+          <%when "Shopping"%>
+            <i class="fas fa-shopping-bag category-icon"></i>
+            <%= tag.name %>
+        <% end %>
         </div>
       </div>
     <% end %>
