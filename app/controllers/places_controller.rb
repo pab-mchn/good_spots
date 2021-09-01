@@ -31,6 +31,10 @@ class PlacesController < ApplicationController
     if params[:search_term].present?
       @places = Place.search_by_name_and_description(params[:search_term])
       @swipe_places = Place.all.sample(6)
+    elsif params[:category]
+      filter = "#{params[:category].downcase}_categories"
+      @swipe_places = Place.all.sample(6)
+      @places = Place.public_send(filter)
     else
       @swipe_places = Place.all.sample(6)
     end
