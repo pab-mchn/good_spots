@@ -9,15 +9,16 @@
     </div>
   </div>
 
-  <div class="dashboard-cards">
+<div class="dashboard-cards">
    <%@viewings.each do |viewing| %> 
-      <div class="places-card">
-      <p><%= viewing.place.name %></p>
-        <%=link_to(viewing_path(viewing), method: :delete) do %>
-       <i class="far fa-trash-alt"></i>
-      <% end %>
-      </div>
+      <div class= "places-card">
+        <div class="card-text">
+          <%= viewing.place.name %>
+            <%=link_to(viewing_path(viewing), method: :delete) do %>
+           <i class="far fa-trash-alt"></i>
+          <% end %>
+        </div>
+      </div>  
     <% end %>
   </div>
-</div> 
-  
+</div>
