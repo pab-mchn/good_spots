@@ -7,13 +7,13 @@ Rails.application.routes.draw do
   get 'splash4', to: 'pages#splash4'
 
   resources :places do
-    resources :viewings, only: [:create, :destroy]
+    resources :viewings, only: [:create]
     collection do
       get :overview
       get :swipe
     end
   end
 
-  resources :viewings, only: [:index]
+  resources :viewings, only: [:index, :destroy]
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
