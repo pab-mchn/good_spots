@@ -9,6 +9,17 @@
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
+.back-arrow-container {
+    margin: 20px 0 0 10px;
+    width: 20px;
+}
+
+.fa-chevron-left {
+    font-size: 25px;
+    color: #69d2aa;
+    margin: 15px 15px 15px 18px;
+}
+
 .good-logo img {
     width: 140px;
     height: auto;
@@ -26,12 +37,6 @@
 
 .dropdown-item:hover {
     color: #69d2aa;
-}
-
-.fa-chevron-left {
-    font-size: 25px;
-    color: #69d2aa;
-    margin: 15px 15px 15px 18px;
 }
 
 .good-drop-down {
