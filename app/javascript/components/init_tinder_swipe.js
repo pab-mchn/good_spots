@@ -1,8 +1,35 @@
 import Rails from '@rails/ujs'
 import Hammer from 'hammerjs'
 
+const sendLike = (event) => {
+  const liked = event.currentTarget.classList.contains("like")
+  console.log(liked)
+  const tinderCards = document.querySelectorAll(".swipe-card-stack")
+  const lastCard = tinderCards[tinderCards.length - 1]
+  const moveOutWidth = document.body.clientWidth
+  const endX = liked ? moveOutWidth : -moveOutWidth;
+  const placeId = lastCard.dataset.placeId
+  const url = ` /places/${placeId}/viewings`
+  Rails.ajax({
+      url: url,
+      type: "post",
+      data: `viewing[liked]=${liked}`
+  })
+  lastCard.style.transform = 'translate(' + endX + 'px)';
+  setTimeout(() => {
+    lastCard.remove()
+  }, 200);
+
+}
+
 const initTinderSwipe = () => {
     const tinderCards = document.querySelectorAll(".swipe-card-stack")
+    const likeButton = document.querySelector(".like")
+    const dislikeButton = document.querySelector(".dislike")
+    console.log(likeButton)
+    likeButton.addEventListener("click", sendLike)
+    dislikeButton.addEventListener("click", sendLike)
+
     tinderCards.forEach((card) => {
         const tinderCard = new Hammer(card)
         tinderCard.on('pan', (event) => {
@@ -25,7 +52,7 @@ const initTinderSwipe = () => {
                 const xMulti = event.deltaX * 0.03;
                 const yMulti = event.deltaY / 80;
                 const rotate = xMulti * yMulti;
-                const liked = event.deltaX > 0 
+                const liked = event.deltaX > 0
                 const placeId = card.dataset.placeId
                 const url = ` /places/${placeId}/viewings`
                 Rails.ajax({
@@ -34,9 +61,13 @@ const initTinderSwipe = () => {
                     data: `viewing[liked]=${liked}`
                 })
                 event.target.style.transform = 'translate(' + toX + 'px, ' + (toY + event.deltaY) + 'px) rotate(' + rotate + 'deg)';
+                setTimeout(() => {
+                  card.remove()
+                }, 200);
             }
         })
     })
 }
+
 
 export { initTinderSwipe }

@@ -4,8 +4,26 @@
       <i class="fas fa-chevron-left"></i>
     <% end %>
   </div>
-  <div class="logo">
+  <div class="good-logo">
     <%= image_tag 'gs-logo-v06.svg' %>
   </div>
-    <i class="fas fa-ellipsis-v"></i>
+<div class="dropdown">
+  <%= image_tag 'profile-image-xue.png', role: "button", id: "dropdownMenu2", class: "avatar" %>
+  <div class="good-drop-down dropdown-menu-right d-none" id="dropdown-menu">
+    <%= link_to viewings_path do %>
+      <button class="dropdown-item" type="button">Dashboard</button>
+    <% end %>
+    <div class="dropdown-divider"></div>
+
+    <% if user_signed_in? %>
+
+      <%= link_to destroy_user_session_path, method: :delete do %>
+        <button class="dropdown-item" type="button">Log out</button>
+      <% end %>
+
+    <% end %>
+
+  </div>
+</div>
+
 </div>

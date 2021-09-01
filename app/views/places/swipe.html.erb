@@ -1,4 +1,4 @@
-<div class="categories-head" style="padding: 0px 0 20px 20px;">
+<div class="categories-head">
   <p class="head-text-light"><strong class="head-text-strong">Search-Term</strong> in your current area</p>
 </div>
 
@@ -11,9 +11,8 @@
 
 <div class ="swipe-3-buttons-container">
   <div class="swipe-3-buttons">
-    <%= image_tag "Button - Cross.svg", class: "swipe-button" %>
-    <%= image_tag "Button - Go.svg", class: "swipe-button" %>
-    <%= image_tag "Button - Heart.svg", class: "swipe-button" %>
+    <%= image_tag "Button X.svg", class: "swipe-button dislike" %>
+    <%= image_tag "Button - Heart.svg", class: "swipe-button like" %>
   </div>
 </div>
 
@@ -21,7 +20,7 @@
   <p class="head-text-light"><strong class="head-text-strong">More.</strong> Get inspired be all the great places here</p>
 </div>
 
-<div class="container-categories-show-cards mt-4">
+<div class="container-categories-show-cards index-bottom-row mt-4">
       <% @swipe_places.each do |place| %>
         <div class="small-card" style="background-image: linear-gradient(rgba(0,0,0,0.19), rgba(0,0,0,0.74)), url('<%= place.image_url || "https://picsum.photos/500" %>')">
           <div class="cat-card-show-text">
@@ -29,4 +28,4 @@
           </div>
         </div>
       <% end %>
-    </div>
+</div>

@@ -1,24 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;500;600;800&display=swap');
-
 .container-top-bar-default {
-  display: flex;
-  justify-content: space-between;
-  margin: 10px 0 35px 0;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin: 0px 0 35px 0;
+    padding: 5px 0;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
-.logo img {
-  width: 140px;
-  height: auto;
+.good-logo img {
+    width: 140px;
+    height: auto;
+}
+
+.dropdown {
+    margin: 12px 25px 15px 0;
+}
+
+.dropdown-menu {}
+
+.dropdown-item {
+    margin: 15px 0;
+}
+
+.dropdown-item:hover {
+    color: #69d2aa;
 }
 
 .fa-chevron-left {
-  font-size: 25px;
-  color: #69d2aa;
-  margin: 15px 15px 15px 18px;
+    font-size: 25px;
+    color: #69d2aa;
+    margin: 15px 15px 15px 18px;
 }
 
-.fa-ellipsis-v {
-  font-size: 24px;
-  color: #69d2aa;
-  margin: 15px 25px 15px 15px;
+.good-drop-down {
+    position: absolute;
+    top: 100%;
+    left: -113px;
+    z-index: 1000;
+    float: left;
+    min-width: 10rem;
+    padding: 0.5rem 0;
+    margin: 0.125rem 0 0;
+    font-size: 1rem;
+    color: #0E0000;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
 }

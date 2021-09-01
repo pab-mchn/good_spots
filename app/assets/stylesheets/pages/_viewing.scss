@@ -1,0 +1,47 @@
+.dashboard {
+  padding: 45px 20px 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  background-color: #FAFAFA;
+}
+
+.dashboard-profile {
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+}
+.welcome-text {
+  margin: 35px 0;
+  font-family: 'Inter', sans-serif;
+  text-transform: none;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: .03em;
+  line-height: 1.2em;
+
+}
+.dashboard-cards {
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.places-card {
+  border-radius: 10px;
+  border: 2px solid #69D2AA;
+  height: 70px;
+  width:294px ;
+  margin: 17px;
+ /* justify-content: center; */
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.good-profile-image {
+  text-align: center;
+}
+.fa-trash-alt {
+ font-size: 27px;
+ margin: 20px 10px 20px 10px;
+}

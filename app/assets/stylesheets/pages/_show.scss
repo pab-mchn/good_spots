@@ -1,129 +1,135 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;500;600;800&display=swap');
+.container {
+    margin-bottom: 45px;
+}
 
 .categories-show-head {
-  margin: 17px 45px 15px 45px;
+    margin: 17px 45px 0px 45px;
 }
 
 .categories-show-bottom {
-  padding: 20px 25px 10px 45px;
-  margin-top: 30px;
+    padding: 20px 25px 10px 45px;
+    margin-top: 30px;
 }
 
 .app-font {
-  font-family: 'Inter', sans-serif;
-  color: #a1a1a1;
+    font-family: 'Inter', sans-serif;
+    color: #a1a1a1;
 }
 
 .head-text-strong {
-  font-family: 'Inter', sans-serif;
-  color: #000;
-  font-weight: 600;
-  font-size: 21px;
-  margin: 0;
+    font-family: 'Inter', sans-serif;
+    color: #000;
+    font-weight: 600;
+    font-size: 21px;
+    margin: 0;
 }
 
 .head-text-light {
-  font-family: 'Inter', sans-serif;
-  color: #a1a1a1;
-  font-weight: 600;
-  font-size: 21px;
-  margin: 0;
+    font-family: 'Inter', sans-serif;
+    color: #a1a1a1;
+    font-weight: 600;
+    font-size: 21px;
+    margin: 0;
 }
 
 .card-content {
-  overflow: hidden;
-  background: white;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  width: 80%;
-  border-radius: 20px;
-  margin: 29px auto 0 auto;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    border-radius: 20px;
+    margin: 29px auto 0 auto;
 }
 
-.card-content > img {
-  height: 341px;
-  width: 100%;
-  object-fit: cover;
+.card-content>img {
+    height: 341px;
+    width: 100%;
+    object-fit: cover;
 }
 
 .card-content p {
-  font-size: 15px;
-  font-family: 'Inter', sans-serif;
-  font-weight: 600;
-  color: #a1a1a1;
-  margin: 0;
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color: #a1a1a1;
+    margin: 0;
 }
 
 .card-content .card-content-infos {
-  padding: 16px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  position: relative;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
 }
 
 .lh-23 {
-  line-height: 23px;
-  margin: 78px 39px 0px 58px;
+    line-height: 23px;
+    margin: 78px 39px 0px 58px;
 }
 
-
 .container-categories-show-cards {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(9, 130px [col-start]);
-  grid-column-gap: 60px;
-  overflow-x: auto;
-  scrollbar-width: none;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(9, 130px [col-start]);
+    grid-column-gap: 60px;
+    overflow-x: auto;
+    scrollbar-width: none;
 }
 
 .cat-single-show-card {
-  border-radius: 10px;
-  border: 0px solid #666;
-  width: 176px;
-  height: 130px;
-  display: flex;
-  align-items: flex-end;
-  /* justify-content: center; */
-  margin: 0 0 15px 0;
-  background-color: #C4C4C4;
+    border-radius: 10px;
+    border: 0px solid #666;
+    width: 176px;
+    height: 130px;
+    display: flex;
+    align-items: flex-end;
+    margin: 0 0 15px 0;
+    background-color: #C4C4C4;
 }
 
-
 .cat-card-show-text {
-  font-family: 'Inter', sans-serif;
-  text-transform: none;
-  font-size: 17px;
-  font-weight: 400;
-  letter-spacing: .01em;
-  line-height: 1.2em;
-  text-align: left;
-  padding: 0 10px 20px 10px;
-  max-width: 130px !important;
+    font-family: 'Inter', sans-serif;
+    text-transform: none;
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: .01em;
+    line-height: 1.2em;
+    text-align: left;
+    padding: 0 10px 20px 10px;
+    max-width: 130px !important;
+}
+
+.card-swipe-infos{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: space-around;
+}
+
+.fas{
+  width: 59px;
+  margin: 0 10px;
 }
 
 .fa-heart{
-  position: absolute;
-  left: 250px;
-  font-size: 45px;
+  margin-top: -3px;
+  font-size: 42px;
   color: #61da93;
+  line-height: 1;
 }
 
 .fa-times{
-  position: absolute;
-  left: 125px;
-  font-size: 45px;
+  margin-top: -4px;
+  font-size: 47px;
   color: #f34a34;
+  line-height: 1;
 }
 
-.btn-flat {
-  color: white;
-  padding: 8px 24px;
-  border-radius: 4px;
-  background: #1EDD88;
-  transition: background 0.3s ease;
-}
-
-.btn-flat:hover {
-  background: #1BCB7F;
-  color: white;
+.fa-map-marker-alt{
+  font-size: 37px;
+  color: #5691F6;
+  line-height: 1;
 }
