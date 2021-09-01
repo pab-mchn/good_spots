@@ -1,62 +1,63 @@
-.dashboard {
-  padding: 45px 20px 30px 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-self: center;
-  background-color: #FAFAFA;
-}
-
-.dashboard-profile {
-  flex-direction: column;
-  justify-content: center;
-  align-self: center;
-}
-.welcome-text {
-  font-family: 'Inter', sans-serif;
-  text-transform: none;
-  font-size: 17px;
-  font-weight: 400;
-  letter-spacing: .03em;
-  line-height: 1.2em;
-  margin: 10px;
-}
-
-.card-text{
-  font-family: 'Inter', sans-serif;
-  text-transform: none;
-  font-size: 17px;
-  font-weight: 400;
-  letter-spacing: .03em;
-  line-height: 1.2em;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 4px 10px 3px 4px;
-}
-
-.dashboard-cards {
-  overflow-x: auto;
-  scrollbar-width: none;
-}
-
-.places-card {
-  border-radius: 10px;
-  text-align: right;
-  border: 2px solid #69D2AA;
-  height: 70px;
-  width:294px ;
-  margin: 20px;
- /* justify-content: center; */
-  font-family: 'Inter', sans-serif;
-  display: flex;
-  justify-content: flex-end;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;500;600;800&display=swap');
+.good-dash-container {
+    padding: 25px 20px 30px 20px;
+    background-color: hsl(0, 0%, 97%);
+    margin-top: -35px;
 }
 
 .good-profile-image {
-  text-align: center;
+    text-align: center;
+    margin-bottom: 15px;
 }
+
+.good-dash-headline {
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    margin: 15px 15px 30px 25px;
+}
+
+.good-cards-container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.good-places-card {
+    font-family: 'Inter', sans-serif;
+    border-radius: 10px;
+    border: 1px solid hsl(0, 0%, 70%);
+    background-color: hsl(0, 0%, 100%);
+    margin-bottom: 20px;
+}
+
+.good-card-text {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    align-self: flex-start;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.2em;
+    padding: 15px;
+    text-transform: capitalize !important;
+}
+
+.good-dash-card-icon {
+    flex-grow: 1;
+    align-self: flex-end;
+    padding: 12px 14px;
+    background-color: #F34A34;
+    border-radius: 10px;
+}
+
+.good-dash-card-icon:hover {
+    background-color: rgb(48, 48, 48);
+}
+
 .fa-trash-alt {
- font-size: 27px;
- margin: 20px 2px 20px 15px;
+    font-size: 17px;
+    color: #fff;
 }
