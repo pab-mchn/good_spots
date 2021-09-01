@@ -1,13 +1,19 @@
+
 <div class="categories-head">
   <p class="head-text-light"><strong class="head-text-strong">Search-Term</strong> in your current area</p>
 </div>
 
-<div class="swipe-container">
-  <% @places.each do |place| %>
-    <div class="swipe-card-stack" data-place-id="<%= place.id %>" style="background-image: url('<%= place.image_url %>')">
-    </div>
-  <% end %>
-</div>
+
+  <div class="swipe-container">
+    <% @places.each do |place| %>
+      <%= link_to place_path(place) do %>
+        <div class="swipe-card-stack" data-place-id="<%= place.id %>" style="background-image: url('<%= place.image_url %>')">
+         <div class="card-title"> <%= place.name %>
+         </div>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
 
 <div class ="swipe-3-buttons-container">
   <div class="swipe-3-buttons">
@@ -17,15 +23,18 @@
 </div>
 
 <div class="categories-head mt-40">
-  <p class="head-text-light"><strong class="head-text-strong">More.</strong> Get inspired be all the great places here</p>
+  <p class="head-text-light"><strong class="head-text-strong">More.</strong> Get inspired be all the great places here.</p>
 </div>
 
-<div class="container-categories-show-cards index-bottom-row mt-4">
-      <% @swipe_places.each do |place| %>
+
+  <div class="container-categories-show-cards index-bottom-row mt-4">
+    <% @swipe_places.each do |place| %>
+      <%= link_to place_path(place) do %>
         <div class="small-card" style="background-image: linear-gradient(rgba(0,0,0,0.19), rgba(0,0,0,0.74)), url('<%= place.image_url || "https://picsum.photos/500" %>')">
           <div class="cat-card-show-text">
             <%= place.name %>
           </div>
         </div>
       <% end %>
-</div>
+    <% end %>
+  </div>
