@@ -17,9 +17,12 @@
         <%= link_to "https://www.google.de/maps/place/#{@place.address}" do%><i class="fas fa-map-marker-alt"></i><% end %>
         <%= link_to swipe_places_path do %><i class="fas fa-heart"></i></i><% end %>
       </div>
-
     </div>
-    <p class="app-font lh-23"><%= @place.description.truncate(200) %></p>
+
+    <div>
+      <p class="detailed-info">Detailed Info<br><%= @place.name %><br> <%= @place.address %><br> <%= @place.telephone_number %></p>
+      <p class="app-font lh-23"> Description<br><%= @place.description.truncate(200) %>
+    </div>
 
     <div class="categories-show-bottom">
       <p class="head-text-light"><strong class="head-text-strong">More places.</strong> in your current area</p>
