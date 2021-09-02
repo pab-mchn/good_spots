@@ -15,7 +15,7 @@
       <div class="card-swipe-infos">
         <%= link_to overview_places_path do %><i class="fas fa-times"></i></i><% end %>
         <%= link_to "https://www.google.de/maps/place/#{@place.address}" do%><i class="fas fa-map-marker-alt"></i><% end %>
-        <%= link_to place_viewings_path(@place, viewing: { liked: true }), method: :post do %><i class="fas fa-heart"></i></i><% end %>
+        <%= link_to place_viewings_path(@place, viewing: { liked: true }, redirect: true), method: :post do %><i class="fas fa-heart"></i></i><% end %>
       </div>
 
     </div>
