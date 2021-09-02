@@ -1,0 +1,63 @@
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;500;600;800&display=swap');
+    .welcome-page-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .welcome-image {
+        max-height: 290px;
+        margin-top: 12vh;
+    }
+    
+    .welcome-text {
+        margin-top: 45px;
+        width: 290px;
+        height: 80px;
+    }
+    
+    .good-welcome-footer {
+        display: flex;
+        flex-direction: row;
+        margin-top: 150px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .splash-navi {
+        display: block;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .good-dot-navi {
+        display: block;
+    }
+    
+    .good-dot,
+    .good-dot .fas,
+    .good-dot .far,
+    .fa-circle {
+        margin: 0 3px;
+        width: 16px !important;
+        color: #00286e;
+        padding-top: 4px;
+    }
+    
+    .good-l-angle {
+        text-align: left;
+        font-size: 25px;
+        color: #00286e;
+    }
+    
+    .good-l-angle-off {
+        text-align: left;
+        font-size: 25px;
+        color: #ffffff;
+    }
+    
+    .good-r-angle {
+        text-align: right;
+        font-size: 25px;
+        color: #00286e;
+    }
