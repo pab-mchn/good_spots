@@ -8,6 +8,9 @@ class ViewingsController < ApplicationController
     place = Place.find(params[:place_id])
     liked = params[:viewing][:liked]
     Viewing.create!(place: place, liked: liked, user: current_user)
+    respond_to do |format|
+      format.html { redirect_to viewings_path }
+    end
   end
 
   def destroy
