@@ -13,6 +13,7 @@ Viewing.delete_all
 PlaceTag.delete_all
 Tag.delete_all
 Place.delete_all
+User.delete_all
 
 main_tags = [:Coffee, :Grocerie, :Social, :Company, :Eatery, :Shopping]
 main_tags.each do |tag|

@@ -29,8 +29,7 @@
   </head>
 
   <body>
-    <%#= render 'shared/navbar' %>
-    <%= render 'shared/top_bar_default' %>
+    <%= render 'shared/top_bar_default' unless ["splash1", "splash2", "splash3"].include? action_name %>
     <%= render 'shared/flashes' %>
 
     <%= yield %>

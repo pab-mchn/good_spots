@@ -5,6 +5,7 @@ class PagesController < ApplicationController
   end
 
   def splash1
+
   end
 
   def splash2
