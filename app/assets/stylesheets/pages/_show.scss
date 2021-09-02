@@ -53,6 +53,7 @@
     height: 360px;
     width: 100%;
     object-fit: cover;
+    border: 1px solid hsl(0, 0%, 90%);
 }
 
 .card-content p {
@@ -61,14 +62,6 @@
     font-weight: 600;
     color: #a1a1a1;
     margin: 0;
-}
-
-.card-content .card-content-infos {
-    padding: 16px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
 }
 
 .lh-23 {
@@ -113,22 +106,33 @@
     margin: 0 10px;
 }
 
+.card-content .card-content-infos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
 .fa-heart {
-    margin-top: -4px;
     font-size: 42px;
     color: #61da93;
     line-height: 1;
+    align-self: start;
+    height: 100%;
 }
 
 .fa-times {
-    margin-top: -4px;
-    font-size: 47px;
+    font-size: 42px;
     color: #f34a34;
     line-height: 1;
+    align-self: start;
+    height: 100%;
 }
 
 .fa-map-marker-alt {
-    font-size: 37px;
+    font-size: 42px;
     color: #5691F6;
     line-height: 1;
+    align-self: start;
+    height: 100%;
 }
