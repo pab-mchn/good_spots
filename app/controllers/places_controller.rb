@@ -1,5 +1,10 @@
 class PlacesController < ApplicationController
   def overview
+    specified_tag_names = [:Coffee, :Grocerie, :Social, :Company, :Eatery, :Shopping]
+    @specified_tags =  specified_tag_names.map do |name|
+      Tag.find_by_name(name)
+    end
+
     @tags = Tag.all.select { |tag| tag.name.length < 8 }.sample(9)
     if params[:query].present?
       # Todo -> Get all places with that query
@@ -26,6 +31,10 @@ class PlacesController < ApplicationController
     if params[:search_term].present?
       @places = Place.search_by_name_and_description(params[:search_term])
       @swipe_places = Place.all.sample(6)
+    elsif params[:category]
+      filter = "#{params[:category].downcase}_categories"
+      @swipe_places = Place.all.sample(6)
+      @places = Place.public_send(filter)
     else
       @swipe_places = Place.all.sample(6)
     end

@@ -20,6 +20,19 @@
     transition: all 0.2s;
 }
 
+.card-title{
+    color: white;
+    font-family: 'Inter', sans-serif;
+    text-transform: none;
+    font-size: 45px;
+    font-weight: 400;
+    letter-spacing: .01em;
+    padding: 0 10px 20px 10px;
+    text-align: left;
+    display: flex;
+    justify-content: flex-end;
+
+}
 .swipe-3-buttons-container {
     position: relative;
     bottom: 0px;
