@@ -24,24 +24,6 @@
 .app-font {
     font-family: 'Inter', sans-serif;
     color: #a1a1a1;
- 
-}
-
-.detailed-info {
-    font-family: 'Inter', sans-serif;
-    color: #a1a1a1;
-    font-size: 10px;
-    line-height: 18px;
-    margin: 20px 20px 0px 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: space-around;
-
-
-}
-.head-text-strong {
-    font-family: 'Inter', sans-serif;
     color: #000;
     font-weight: 600;
     font-size: 21px;
@@ -73,13 +55,40 @@
 .card-content p {
     font-size: 15px;
     font-family: 'Inter', sans-serif;
-    font-weight: 600;
+    font-weight: 500;
     color: #a1a1a1;
     margin: 0;
 }
 
+.show-info-container {
+    margin-top: 40px;
+}
+
+.show-small-head {
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-left: 20px;
+}
+
+.show-address {
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 5px 20px 35px 20px;
+}
+
+.show-decription-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.3;
+    margin: 5px 20px 20px 20px;
+}
+
 .lh-23 {
-    line-height: 23px;
     margin: 20px 20px 20px 20px;
 }
 
@@ -125,6 +134,18 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
+}
+
+.detailed-info {
+    font-family: 'Inter', sans-serif;
+    color: #a1a1a1;
+    font-size: 10px;
+    line-height: 18px;
+    margin: 20px 20px 0px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: space-around;
 }
 
 .fa-heart {

@@ -19,17 +19,19 @@
       </div>
     </div>
 
-
-
+  <div class="show-info-container">
     <div>
-      <p class="detailed-info">Detailed Info<br><%= @place.name %><br> <%= @place.address %><br> <%= @place.telephone_number %></p>
-      <p class="app-font lh-23"> Description<br><%= @place.description.truncate(200) %>
+    <div class="show-small-head">Details</div>
+      <p class="show-address"><%= @place.name %><br><%= @place.address %><br><%= @place.telephone_number %></p>
+
+    <div class="show-small-head">Description</div>
+      <p class="show-decription-text"><%= @place.description.truncate(200) %>
     </div>
 
     <div class="categories-show-bottom">
       <p class="head-text-light"><strong class="head-text-strong">More places.</strong> in your current area</p>
     </div>
-
+  </div>
     <div class="container-categories-show-cards">
       <% @bottom_places.each do |place| %>
         <%= link_to place_path(place) do  %>
