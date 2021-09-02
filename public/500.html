@@ -4,63 +4,53 @@
   <title>We're sorry, but something went wrong (500)</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <style>
-  .rails-default-error-page {
-    background-color: #EFEFEF;
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;500;600;800&display=swap');
+  .error-page500 {
+    background-color:#4EB9C5;
     color: #2E2F30;
     text-align: center;
-    font-family: arial, sans-serif;
+    font-family: 'Inter', sans-serif;
     margin: 0;
   }
 
-  .rails-default-error-page div.dialog {
-    width: 95%;
-    max-width: 33em;
-    margin: 4em auto 0;
+  .error-page500 div.dialog500 {
+    text-align: center;
   }
 
-  .rails-default-error-page div.dialog > div {
-    border: 1px solid #CCC;
-    border-right-color: #999;
-    border-left-color: #999;
-    border-bottom-color: #BBB;
-    border-top: #B00100 solid 4px;
-    border-top-left-radius: 9px;
-    border-top-right-radius: 9px;
-    background-color: white;
-    padding: 7px 12% 0;
-    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+   .dialog > img{
+    margin: auto;
   }
 
-  .rails-default-error-page h1 {
-    font-size: 100%;
-    color: #730E15;
+  .error-page500 h1 {
+    font-size: 80px;
+    color: #777474;
     line-height: 1.5em;
   }
 
-  .rails-default-error-page div.dialog > p {
-    margin: 0 0 1em;
-    padding: 1em;
-    background-color: #F7F7F7;
-    border: 1px solid #CCC;
-    border-right-color: #999;
-    border-left-color: #999;
-    border-bottom-color: #999;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-top-color: #DADADA;
-    color: #666;
-    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+  .dialog500{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .dialog500-text > p{
+    color: #4e4c4c;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
   }
   </style>
 </head>
 
-<body class="rails-default-error-page">
-  <!-- This file lives in public/500.html -->
-  <div class="dialog">
-    <div>
-      <h1>We're sorry, but something went wrong.</h1>
+<body class="error-page500">
+  <div class="dialog500">
+    <img
+      src="https://v3b4d4f5.rocketcdn.me/wp-content/uploads/fly-images/887556/how-to-fix-500-internal-server-error-for-wordpress-490x205-c.png" />
+    <div class="dialog500-text">
+      <p>INTERNAL SERVER ERROR</p>
+      <p>An Internal Server Error has ocurred</p>
     </div>
-    <p>If you are the application owner check the logs for more information.</p>
   </div>
+</body>
 </body>
 </html>
