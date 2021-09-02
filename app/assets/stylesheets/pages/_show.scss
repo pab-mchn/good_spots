@@ -1,14 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;500;600;800&display=swap');
+.card-swipe-infos {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: space-around;
+    margin: 0px 0px 0px 0px !important;
+}
+
 .container {
     margin-bottom: 45px;
 }
 
 .categories-show-head {
-    margin: 17px 45px 0px 45px;
+    margin: 20px 0 0 30px;
 }
 
 .categories-show-bottom {
-    padding: 20px 25px 10px 45px;
+    padding: 20px;
     margin-top: 30px;
 }
 
@@ -36,14 +45,12 @@
 .card-content {
     overflow: hidden;
     background: white;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    width: 80%;
-    border-radius: 20px;
-    margin: 29px auto 0 auto;
+    padding: 20px;
 }
 
 .card-content>img {
-    height: 341px;
+    border-radius: 10px;
+    height: 360px;
     width: 100%;
     object-fit: cover;
 }
@@ -60,13 +67,13 @@
     padding: 16px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
     position: relative;
 }
 
 .lh-23 {
     line-height: 23px;
-    margin: 78px 39px 0px 58px;
+    margin: 45px 20px 20px 20px;
 }
 
 .container-categories-show-cards {
@@ -101,35 +108,27 @@
     max-width: 130px !important;
 }
 
-.card-swipe-infos{
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: space-around;
+.fas {
+    width: 59px;
+    margin: 0 10px;
 }
 
-.fas{
-  width: 59px;
-  margin: 0 10px;
+.fa-heart {
+    margin-top: -4px;
+    font-size: 42px;
+    color: #61da93;
+    line-height: 1;
 }
 
-.fa-heart{
-  margin-top: -3px;
-  font-size: 42px;
-  color: #61da93;
-  line-height: 1;
+.fa-times {
+    margin-top: -4px;
+    font-size: 47px;
+    color: #f34a34;
+    line-height: 1;
 }
 
-.fa-times{
-  margin-top: -4px;
-  font-size: 47px;
-  color: #f34a34;
-  line-height: 1;
-}
-
-.fa-map-marker-alt{
-  font-size: 37px;
-  color: #5691F6;
-  line-height: 1;
+.fa-map-marker-alt {
+    font-size: 37px;
+    color: #5691F6;
+    line-height: 1;
 }
