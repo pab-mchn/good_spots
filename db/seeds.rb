@@ -14,6 +14,12 @@ PlaceTag.delete_all
 Tag.delete_all
 Place.delete_all
 
+main_tags = [:Coffee, :Grocerie, :Social, :Company, :Eatery, :Shopping]
+main_tags.each do |tag|
+  Tag.create!(name: tag.to_s)
+  puts "Tag: #{tag} has been created"
+end
+
 
 response = HTTParty.get('https://dev.ofdb.io/v0/search?bbox=42.27,-7.97,52.58,38.25&limit=2000')
 response = JSON.parse(response.body)
@@ -116,7 +122,7 @@ images = {
 "fLottes Paulchen": "https://images.unsplash.com/photo-1601067095185-b8b73ad7db10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1481&q=80",
 "Samadhi indisches Restaurant": "https://images.unsplash.com/photo-1596797038530-2c107229654b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=375&q=80",
  "FUTURZWEI. Stiftung Zukunftsfähigkeit\u2028": "https://images.unsplash.com/photo-1603573355706-3f15d98cf100?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1488&q=80",
- 
+
  "Bio Konditorei Tillmann GmbH": "https://images.unsplash.com/photo-1477763858572-cda7deaa9bc5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=676&q=80",
 
  "Syndikat - Kneipe, Bar": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80",
@@ -216,11 +222,11 @@ images = {
 
 }
 
-puts "Assigning Images" 
+puts "Assigning Images"
 Place.all.each do |place|
   next unless images[place.name.to_sym]
   place.image_url = images[place.name.to_sym]
-  place.save! 
+  place.save!
   puts "place #{place.name} has been assigend the image #{images[place.name.to_sym]}"
 end
 # puts "finished"
