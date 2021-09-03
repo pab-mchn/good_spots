@@ -1,6 +1,6 @@
 class PlacesController < ApplicationController
   def overview
-    specified_tag_names = [:Coffee, :Grocerie, :Social, :Company, :Eatery, :Shopping]
+    specified_tag_names = [:Coffee, :Social, :Company, :Eatery, :Shopping, :Grocerie]
     @specified_tags =  specified_tag_names.map do |name|
       Tag.find_by_name(name)
     end
