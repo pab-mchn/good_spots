@@ -24,24 +24,6 @@
 .app-font {
     font-family: 'Inter', sans-serif;
     color: #a1a1a1;
- 
-}
-
-.detailed-info {
-    font-family: 'Inter', sans-serif;
-    color: #a1a1a1;
-    font-size: 10px;
-    line-height: 18px;
-    margin: 20px 20px 0px 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: space-around;
-
-
-}
-.head-text-strong {
-    font-family: 'Inter', sans-serif;
     color: #000;
     font-weight: 600;
     font-size: 21px;
@@ -67,26 +49,47 @@
     height: 360px;
     width: 100%;
     object-fit: cover;
+    border: 1px solid hsl(0, 0%, 90%);
 }
 
 .card-content p {
     font-size: 15px;
     font-family: 'Inter', sans-serif;
-    font-weight: 600;
+    font-weight: 500;
     color: #a1a1a1;
     margin: 0;
 }
 
-.card-content .card-content-infos {
-    padding: 16px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
+.show-info-container {
+    margin-top: 40px;
+}
+
+.show-small-head {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-left: 20px;
+    color: #5FBD99;
+}
+
+.show-address {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.4;
+    margin: 5px 20px 35px 20px;
+}
+
+.show-decription-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.4;
+    margin: 5px 20px 20px 20px;
 }
 
 .lh-23 {
-    line-height: 23px;
     margin: 20px 20px 20px 20px;
 }
 
@@ -127,22 +130,51 @@
     margin: 0 10px;
 }
 
-.fa-heart {
-    margin-top: -4px;
-    font-size: 42px;
-    color: #61da93;
-    line-height: 1;
+.card-content .card-content-infos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.detailed-info {
+    font-family: 'Inter', sans-serif;
+    color: #a1a1a1;
+    font-size: 10px;
+    line-height: 18px;
+    margin: 20px 20px 0px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: space-around;
 }
 
 .fa-times {
-    margin-top: -4px;
-    font-size: 47px;
+    display: block;
+    font-size: 53px;
     color: #f34a34;
     line-height: 1;
+    height: 100%;
+    margin-top: -4px;
+    padding: 0 0 10px 0;
+    text-align: center;
+    /* background-color: #5691F6; */
 }
 
 .fa-map-marker-alt {
-    font-size: 37px;
+    font-size: 42px;
     color: #5691F6;
     line-height: 1;
+    height: 100%;
+    text-align: center;
+    padding: 0 0 10px 0;
+    /* background-color: green; */
+}
+
+.fa-heart {
+    font-size: 45px;
+    color: #61da93;
+    text-align: center;
+    padding: -2px 0 10px 0;
+    /* background-color: #5691F6; */
 }
