@@ -158,7 +158,7 @@ images = {
 
  "Posteo": "https://images.unsplash.com/photo-1581333100576-b73befd79a9b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80",
 
- "Der Sache wegen": "https://www.veggiesearch.de/wp-content/uploads/2018/10/der-sache-wegen-geschaeft-800x600.jpg",
+ "Der Sache wegen": "https://images.unsplash.com/photo-1552940862-d52170cf7cfb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=334&q=80",
 
  "Sustainable Design Center e.V.": "https://images.unsplash.com/photo-1587502536575-6dfba0a6e017?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
 

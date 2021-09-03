@@ -36,7 +36,7 @@ ActiveRecord::Schema.define(version: 2021_08_26_101105) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.boolean "recommended"
-    t.string "image_url"
+    t.string "3"
   end
 
   create_table "tags", force: :cascade do |t|
