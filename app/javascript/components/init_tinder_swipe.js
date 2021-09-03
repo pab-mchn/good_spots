@@ -37,6 +37,7 @@ const initTinderSwipe = () => {
                 const yMulti = event.deltaY / 80;
                 const rotate = xMulti * yMulti;
                 card.style.transform = 'translate(' + event.deltaX + 'px, ' + event.deltaY + 'px) rotate(' + rotate + 'deg)';
+                if (event.eventType == 8) { card.style.transform = ''; }
             })
             tinderCard.on('panend', (event) => {
                 const moveOutWidth = document.body.clientWidth
