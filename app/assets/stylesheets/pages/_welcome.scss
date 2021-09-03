@@ -5,6 +5,15 @@
         align-items: center;
     }
     
+    .welcome-logo-container {
+        min-height: 376px !important;
+    }
+    
+    .welcome-logo {
+        margin-top: 20vh;
+        height: 60px;
+    }
+    
     .welcome-image {
         max-height: 290px;
         margin-top: 12vh;
