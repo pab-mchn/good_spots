@@ -9,17 +9,18 @@
   </div>
 
   <div class="good-cards-container">
-    <%@viewings.each do |viewing| %>
+    <% @viewings.each do |viewing| %>
       <div class= "good-places-card">
         <div class="good-card-text">
-          <p><%= viewing.place.name %></p>
-          <%=link_to(viewing_path(viewing), method: :delete) do %>
-            <div class="good-dash-card-icon">
-              <i class="far fa-trash-alt"></i>
-            </div>
-          <% end %>
+          <img src="<%= viewing.place.image_url %>" alt="img">
+          <p class='good-places-title'><%= viewing.place.name %></p>
+            <%=link_to(viewing_path(viewing), method: :delete) do %>
+              <div class="good-dash-card-icon">
+                <i class="far fa-trash-alt"></i>
+              </div>
+            <% end %>
         </div>
-    </div>
+      </div>
     <% end %>
   </div>
 </div>

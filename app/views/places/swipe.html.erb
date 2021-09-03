@@ -4,12 +4,14 @@
 </div>
 
 
-  <div class="swipe-container">
-    <% @places.each do |place| %>
-      <%= link_to place_path(place) do %>
-        <div class="swipe-card-stack" data-place-id="<%= place.id %>" style="background-image: linear-gradient(rgba(0,0,0,0.19), rgba(0,0,0,0.83)),url('<%= place.image_url %>')">
-         <p class="card-title"><%= place.name %></p>
-        </div>
+  <div class="swipe-container"> 
+    <% unless @places.nil? %>
+      <% @places.each do |place| %>
+        <%= link_to place_path(place) do %>
+          <div class="swipe-card-stack" data-place-id="<%= place.id %>" style="background-image: linear-gradient(rgba(0,0,0,0.19), rgba(0,0,0,0.83)),url('<%= place.image_url %>')">
+          <p class="card-title"><%= place.name %></p>
+          </div>
+        <% end %>
       <% end %>
     <% end %>
   </div>

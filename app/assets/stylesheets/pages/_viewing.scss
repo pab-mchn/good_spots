@@ -30,6 +30,11 @@
     margin-bottom: 20px;
 }
 
+.good-places-title {
+    width: 50%;
+    text-align: center;
+}
+
 .good-card-text {
     display: flex;
     flex-direction: row;
@@ -45,12 +50,19 @@
     text-transform: capitalize !important;
 }
 
+.good-card-text > img {
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+
+}
 .good-dash-card-icon {
     flex-grow: 1;
     align-self: flex-end;
     padding: 12px 14px;
     background-color: #F34A34;
     border-radius: 10px;
+    padding: 10px;
 }
 
 .good-dash-card-icon:hover {
